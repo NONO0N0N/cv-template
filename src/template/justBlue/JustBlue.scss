@@ -1,0 +1,94 @@
+// color
+$rich_black: #071013;
+$pacific_blue: #23B5D3; 
+$pewter_blue: #75ABBC; 
+$cadet_blue_crayola: #A2AEBB; 
+$gainboro: #DFE0E2; 
+
+.just-blue {
+    font-size: 8px;
+    color: $rich_black;
+    padding: 16px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    svg {
+        fill: $pacific_blue;
+        margin-right: 8px;
+    }
+
+    .svg-github {
+        position: relative;
+        top: 8px;
+    }
+
+    .svg-likedin {
+        position: relative;
+        top: 8px;
+    }
+    
+    .svg-mail {
+        position: relative;
+        top: 7px;
+    }
+
+    .CVHeader {
+        padding: 20px 0 12px 15%;
+        color: $cadet_blue_crayola;
+        margin-bottom: 20px;
+        img {
+            float: left;
+            margin: 1rem 3rem 0 0;
+            height: 100px;
+        }
+    
+        .name {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 40px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            color: $rich_black;
+        }
+
+        .contact {
+            font-size: 22px;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+    }
+
+    .center-div {
+
+        .content-box {
+            font-size: 24px;
+            margin-bottom: 16px;
+            
+            .topic {
+                font-size: 24px;
+                border-bottom: $gainboro solid 2px;
+                padding-left: 15%;
+                padding-bottom: 8px;
+                margin: 20px 0 15px;
+
+                color: $pacific_blue;
+                font-weight: 600;
+            }
+
+            .list {
+                font-size: 20px;
+                padding-left: 15%;
+                padding-right: 15%;
+                margin-bottom: 8px;
+
+                .duration {
+                    float: right;
+                    margin-top: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}

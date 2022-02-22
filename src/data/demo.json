@@ -1,0 +1,90 @@
+{
+    "name": "Johnny Green",
+    "contact": {
+        "email": "johngreen@gmail.com",
+        "linkdin": "johngreen",
+        "github": "johngreen2245"
+    },
+    "skills": [
+        {
+            "name": "Python",
+            "detail": "you can perform basic tasks and have a preliminary understanding of the skill"
+        },
+        {
+            "name": "Javascript",
+            "detail": " Someone who is proficient and can handle most tasks independently. They have advanced knowledge of the skill and its functions and can troubleshoot problems on their own."
+        },
+        {
+            "name": "Stackoverflow",
+            "detail": "Master level"
+        },
+        {
+            "skill_name": "Haskell",
+            "detail": "What are u talking about"
+        }
+    ],
+    "educations": [
+        {
+            "school": "Highschool of ABCDEF",
+            "course": "Highschool",
+            "duration": "2019 -2020"
+        },
+        {
+            "school": "University Of ABC",
+            "course": "Computer Science",
+            "duration": "2020 - Present"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project A",
+            "role": "Full stack developer",
+            "duration": "OCT 2019 - APR 2020",
+            "details": [
+                {
+                    "highlight":"Demo",
+                    "detail":"this is demo"
+                },
+                {
+                    "highlight":"Demo",
+                    "detail":"this is also demo"
+                }
+            ]
+        },
+        {
+            "name": "Project B",
+            "role": "Data Analyst",
+            "duration": "JAN 2021 - MAR 2022",
+            "details": [
+                {
+                    "highlight":"Demo",
+                    "detail":"this one is demo too"
+                }
+            ]
+        }
+    ],
+    "work_experience": [
+        {
+            "location": "Company ABCDEFG",
+            "role": "Backend developer intern",
+            "duration": "MAY 2020 - SEP 2020",
+            "details": [
+                {
+                    "highlight":"API",
+                    "detail":"build api for company internal usage"
+                }
+            ]
+        },
+        {
+            "location": "Company ABC",
+            "role": "Frontend developer intern",
+            "duration": "DEC 2022 - MAR 2023",
+            "details": [
+                {
+                    "highlight":"VUE.js",
+                    "detail":"build fantastic website by using VUE.js"
+                }
+            ]
+        }
+    ]
+}
