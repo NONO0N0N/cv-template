@@ -8,7 +8,6 @@ interface props {
 }
 
 const ContentBoxDetail = (props: props) => {
-    console.log(props);
     return (
         <ul className="content-box-detail">
             {props.details.map(detail =>

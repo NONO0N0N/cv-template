@@ -16,9 +16,9 @@ const CVHeader = (props: props) => {
             <div className="name">{props.name}</div>
 
             <div className="contact">
-                {props.contact.email !== null ? (<span><Mail />{props.contact.email}</span>) : null}
-                {props.contact.linkdin !== null ? (<span><Linkedin />{props.contact.linkdin}</span>) : null}
-                {props.contact.github !== "" || props.contact.github === undefined ? (<span><Github />{props.contact.github}</span>): (<p>null</p>) }
+                {!props.contact.email || props.contact.email === "" ? null : (<span><Mail />{props.contact.email}</span>)}
+                {!props.contact.linkdin || props.contact.linkdin === "" ? null : (<span><Linkedin />{props.contact.linkdin}</span>)}
+                {!props.contact.github || props.contact.github === "" ? null : (<span><Github />{props.contact.github}</span>)}
             </div>
         </div>
     )
