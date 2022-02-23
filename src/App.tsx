@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import JustBlue from './template/justBlue/JustBlue';
 import SaveBtn from './components/save button/SaveBtn';
 
-import data from "./data/demo.json";
+import data from "./data/data.json";
 import "./App.scss";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
 
       <div className="print-element" ref={printElement}>
-        <JustBlue data={data} profile_image="../../data/test.png" />
+        <JustBlue data={data} />
       </div>
       <SaveBtn printElement={printElement.current}/>
     </div>

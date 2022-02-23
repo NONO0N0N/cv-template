@@ -8,13 +8,12 @@ import "./JustBlue.scss";
 
 interface headerProps {
     data: any;
-    profile_image: string;
 }
 
 const JustBlue = (props: headerProps) => {
     return (
         <div className="just-blue">
-            <CVHeader name={props.data.name} contact={props.data.contact} profile_image={props.profile_image}/>
+            <CVHeader name={props.data.name} contact={props.data.contact}/>
             <div className="center-div">               
                 <Skills skills={props.data.skills} />
                 <ContentBox topic={props.data.educations.topic} details={props.data.educations.details} />
