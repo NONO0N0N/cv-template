@@ -3,3 +3,8 @@ $breakpoint-a4: 640px;
 $tablet: 768px; 
 $desktop: 1024px;
 $desktopXL: 1950px;
+
+@mixin print {
+    padding-top: 10px;
+    page-break-inside: avoid;
+}

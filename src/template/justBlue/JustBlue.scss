@@ -34,122 +34,127 @@ $gainboro: #DFE0E2;
         top: 7px;
     }
 
-    .CVHeader {
-        padding: 20px 0 12px 15%;
-        color: $cadet_blue_crayola;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        @media (max-width: #{$breakpoint-a4}) {
-            padding-left: 10%;
-        }
-
-        @media (min-width: #{$desktopXL}) {
-            margin-left: 150px;
-            flex-direction: column;
-        }
-
-        img {
-            
-            margin: 1rem 3rem 0 0;
-            height: 100px;
-
-            order: 1;
-            flex-grow: 0;
-            @media (min-width: #{$desktopXL}) {
-               position: absolute; 
-               left: 15vw;
-               margin-left: 10%;
-               margin-top: 35px;
-               padding-left: 25px;
+    .page {
+        @include print;
+        .CVHeader {
+            padding: 20px 0 12px 15%;
+            color: $cadet_blue_crayola;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+    
+            @media (max-width: #{$breakpoint-a4}) {
+                padding-left: 10%;
             }
-
-            @media (max-width: #{$phone}) {
-                margin: auto;
-                padding-right: 15%;
-             }
-
+    
+            @media (min-width: #{$desktopXL}) {
+                margin-left: 150px;
+                flex-direction: column;
+            }
+    
+            img {
+                
+                margin: 1rem 3rem 0 0;
+                height: 100px;
+    
+                order: 1;
+                flex-grow: 0;
+                @media (min-width: #{$desktopXL}) {
+                   position: absolute; 
+                   left: 15vw;
+                   margin-left: 10%;
+                   margin-top: 35px;
+                   padding-left: 25px;
+                }
+    
+                @media (max-width: #{$phone}) {
+                    margin: auto;
+                    padding-right: 15%;
+                 }
+    
+            }
+        
+            .name {
+                display: flex;
+                justify-content: flex-start;
+                font-size: 40px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                align-items: center;
+    
+                order: 2;
+                flex-grow: 5;
+    
+                color: $rich_black;
+    
+                @media (min-width: #{$desktopXL}) {
+                    position: relative;
+                    top: 16px;
+                }
+            }
+    
+            .contact {
+                margin-top: 15px;
+                font-size: 22px;
+                display: flex;
+                justify-content: flex-start;
+    
+                order: 5;
+    
+                span {
+                    margin-right: 10px;
+                }
+                
+                @media (max-width: #{$breakpoint-a4}) {
+                    margin-top: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+            }
+    
+    
         }
     
-        .name {
-            display: flex;
-            justify-content: flex-start;
-            font-size: 40px;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            align-items: center;
-
-            order: 2;
-            flex-grow: 5;
-
-            color: $rich_black;
-
-            @media (min-width: #{$desktopXL}) {
-                position: relative;
-                top: 16px;
-            }
-        }
-
-        .contact {
-            margin-top: 15px;
-            font-size: 22px;
-            display: flex;
-            justify-content: flex-start;
-
-            order: 5;
-
-            span {
-                margin-right: 10px;
-            }
-            
-            @media (max-width: #{$breakpoint-a4}) {
-                margin-top: 0px;
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-            }
-        }
-
-
-    }
-
-    .content-box {
-        font-size: 24px;
-        margin-bottom: 16px;
-        
-        .topic {
+        .content-box {
             font-size: 24px;
-            border-bottom: $gainboro solid 2px;
-            padding-left: 15%;
-            padding-bottom: 8px;
-            margin: 20px 0 15px;
-
-            color: $pacific_blue;
-            font-weight: 600;
-
-            @media (max-width: #{$breakpoint-a4}) {
-                padding-left: 10%;
+            margin-bottom: 16px;
+            
+            .topic {
+                font-size: 24px;
+                border-bottom: $gainboro solid 2px;
+                padding-left: 15%;
+                padding-bottom: 8px;
+                margin: 20px 0 15px;
+    
+                color: $pacific_blue;
+                font-weight: 600;
+    
+                @media (max-width: #{$breakpoint-a4}) {
+                    padding-left: 10%;
+                }
             }
-        }
-
-        .list {
-            font-size: 20px;
-            padding-left: 15%;
-            padding-right: 15%;
-            margin-bottom: 8px;
-
-            @media (max-width: #{$breakpoint-a4}) {
-                padding-left: 10%;
-            }
-
-            .duration {
-                float: right;
-                margin-top: 10px;
-                font-size: 18px;
+    
+            .list {
+                font-size: 20px;
+                padding-left: 15%;
+                padding-right: 15%;
+                margin-bottom: 8px;
+    
+                @media (max-width: #{$breakpoint-a4}) {
+                    padding-left: 10%;
+                }
+    
+                .duration {
+                    float: right;
+                    margin-top: 10px;
+                    font-size: 18px;
+                }
             }
         }
     }
+
+    
 }
