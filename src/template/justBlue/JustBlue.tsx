@@ -29,6 +29,11 @@ const JustBlue = (props: headerProps) => {
                 <div className="center-div">
                 <ContentBox topic={props.data.work_experience.topic} details={props.data.work_experience.details} />
                 </div>
+            </div>
+            <div className="page">
+                <div className="center-div">
+                <ContentBox topic={props.data.extracurricular.topic} details={props.data.extracurricular.details} />
+                </div>
             </div> 
             
         </div>
